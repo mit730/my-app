@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+   margin: 0;
+   padding: 0;
+  
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: larger;
+} 
+ body {
+   background-image: url("note.jpg");
+   background-color: #c28f8f;
+  } 
+.container{
+   /* margin: 100%; */
+    margin-top: 5px;
+   margin-bottom: 5px;
+   padding: 5px; 
+   align-items: center;  
+   border: 4px solid brown;
+   
+}
+.app-wrapper{
+   margin: auto; 
+   padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1{
+   text-align: center;
+   font-weight: bold;
+   padding: 3px;
+   height: 20%;
+
+}
+.items{
+   width: 100%;
+   border: 1px solid rgb(46, 12, 112)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ 
+.task-input{
+   margin-left: 20%;
+   width: 50%;
+   padding: 5px;
+   letter-spacing: 1px;
+   border-radius: 20px;
+} 
+ .complete{
+    text-decoration: line-through;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+ .btn{
+   margin: 1rem;
+   width: 10%;
+   height: 4.5rem;
+   text-transform: uppercase;
+   font-size: 2rem;
+   border-radius: 20px;
+   letter-spacing: 1px;
+   color: white;
+   background-color: slategrey;
+ }
+
+ .list-item{
+   list-style: none;
+   border: 1px solid black;
+ }
+
+
+ .list{
+   margin-left: 20%;
+   width: 50%;
+   padding: 5px;
+   letter-spacing: 1px;
+   border-radius: 20px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   height: 10%;
+  
+ }
+ .button-complete{
+   margin: 5px 5px 5px 5px;
+   border-radius: 25px;
+   color: rgb(15, 97, 32);
+
+ }
+ .button-edit{
+   margin: 5px 5px 5px 5px;
+   border-radius: 25px;
+   color: brown;
+   align-items: center;
+ }
+ .button-delete{
+   margin: 5px 5px 5px 5px;
+   border-radius: 25px;
+   color: red;
+   align-items: center;
+ }
+
+ .fa{
+   width: 5rem;
+   padding: 3px;
+   margin: 0 3px 0 3px;
+   border-radius: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ @media screen and (max-width: 770px) {
+    .fa{
+      width: 100%;
+      display: block;
+    }
+ }
